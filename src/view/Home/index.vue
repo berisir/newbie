@@ -1,5 +1,14 @@
 <template>
-	<div>
-		newble项目开始
-	</div>	
+  <div>
+    <footerNav></footerNav>
+  </div>	
 </template>
+<script>
+import footerNav from '@/components/footerNav'
+export default {
+  components:{
+  	footerNav
+  }
+}	
+
+</script>	
