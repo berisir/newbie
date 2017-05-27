@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/view/Home'
+import Title from '@/components/Title'
 Vue.use(Router)
-
-
-
 
 export default new Router({
   routes: [
@@ -12,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path:'/title',
+      name:'title',
+      component:Title
     }
   ]
 })

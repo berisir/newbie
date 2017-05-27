@@ -8,8 +8,7 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.use(Element)
-
-
+require('@/static/css/reset.css');
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
