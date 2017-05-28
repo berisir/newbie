@@ -5,21 +5,32 @@ import Special from '@/view/Special'
 import Course from '@/view/Course'
 import Interview from '@/view/Interview'
 import Mine from '@/view/Mine'
+
+import HomeIndex from '@/view/Home/component/HomeIndex'
+
+
 Vue.use(Router)
-
-
-
-
 export default new Router({
   routes: [
   	{
       path: '/',
-      redirect: '/Home'
+      redirect: '/Home/HomeIndex'
     },
     {
       path: '/Home',
       name: 'Home',
-      component: Home
+      component: Home,
+      children: [
+        {
+          path:'HomeIndex',
+          component: HomeIndex
+        },
+        {
+          path:'HomeIndex',
+          component: HomeIndex
+        }
+
+      ]
     },
     {
       path: '/Special',
